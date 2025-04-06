@@ -1,17 +1,20 @@
 import './App.css';
 import Contact from '../src/components/contact';
-import Home from '../src/components/home';
-import About from '../src/components/about';
-import Cars from '../src/components/cars';
-import Nature from '../src/components/nature';
-import Historical from '../src/components/historical';
-import Tech from '../src/components/tech';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
+import Home from './components/home';
+import About from './components/about';
+import Cars from './components/cars';
+import Nature from './components/nature';
+import Historical from './components/historical';
+import Tech from './components/tech';
+import { BrowserRouter,Routes,Route, } from 'react-router-dom';
 
 function App() {
   return (
     <>
         <BrowserRouter>
+        <Navbar/>
     <Routes>
           <Route path="/"
           element={<Home/>}>
@@ -35,6 +38,7 @@ function App() {
           element={<Tech/>}>
           </Route>
         </Routes>
+        <Footer/>
         </BrowserRouter>
     </>
   );
