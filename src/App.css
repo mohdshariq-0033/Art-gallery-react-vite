@@ -110,4 +110,16 @@ a:hover p{
 
 /* about end */
 
+/* navbar item start*/
+.navbar-brand{
+  font-weight: 500;
+}
+.nav-top{
+  font-weight: 500;
+}
+.nav-top:hover{
+color: #0c67ed;
+}
+/* navbar item end */
+
 
