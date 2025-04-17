@@ -16,16 +16,6 @@ export default function footer() {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="" className="nav-link px-2 text-body-secondary">
-                about
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link px-2 text-body-secondary">
-                contact us
-              </Link>
-            </li>
           </ul>
           <p className="text-center text-body-secondary">© 2025 Company, Art Gallery</p>
         </footer>

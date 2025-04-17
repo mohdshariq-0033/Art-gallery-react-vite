@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from "react-bootstrap/Nav";
 import { CgGitFork } from "react-icons/cg";
@@ -6,8 +6,20 @@ import {AiFillStar} from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 50); // 50px se jyada scroll par transparent
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
   useEffect(() => {
-    const navLinks = document.querySelectorAll(".navbar-nav .nav-top nav-link");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-top.nav-link");
+
     const bsCollapse = document.getElementById("navbarSupportedContent");
 
     navLinks.forEach((link) => {
@@ -29,9 +41,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-tertiary"
-      style={{ backgroundColor: "#e3f2fd" }}
-    >
+    className={`navbar navbar-expand-lg fixed-top ${isScrolled ? "navbar-transparent" : "navbar-colored"}`}
+  >  
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           Art Gallery

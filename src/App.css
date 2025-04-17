@@ -1,3 +1,7 @@
+body {
+  padding-top: 55px; /* adjust according to your navbar height */
+}
+
 .imgContainer{
   transition: 0.2s ease-in-out 0s;
   position:relative;
@@ -120,6 +124,18 @@ a:hover p{
 .nav-top:hover{
 color: #0c67ed;
 }
+
+.navbar-colored {
+  background-color: #f3faff !important;
+  transition: background-color 0.4s ease;
+}
+
+.navbar-transparent {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(10px); /* optional: glassmorphism effect */
+  transition: background-color 0.4s ease;
+}
+
 /* navbar item end */
 
 
