@@ -159,6 +159,11 @@ export const ImgData = [
     downloadLink:
       "https://media.istockphoto.com/id/1161878589/photo/bueatiful-tea-plantation-on-mountain.jpg?s=612x612&w=0&k=20&c=0SxibtMflIB16q5czESEDmm_lKW54z2_j0Dv5cjl9g8=",
   },
+   {
+    src: "/nature image/image33.jpg",
+    downloadLink:
+      "https://media.istockphoto.com/id/1161878589/photo/bueatiful-tea-plantation-on-mountain.jpg?s=612x612&w=0&k=20&c=0SxibtMflIB16q5czESEDmm_lKW54z2_j0Dv5cjl9g8=",
+  },
     {
     src: "/nature image/image34.jpg",
     downloadLink:
@@ -171,6 +176,11 @@ export const ImgData = [
   },
     {
     src: "/nature image/image36.jpg",
+    downloadLink:
+      "https://media.istockphoto.com/id/1161878589/photo/bueatiful-tea-plantation-on-mountain.jpg?s=612x612&w=0&k=20&c=0SxibtMflIB16q5czESEDmm_lKW54z2_j0Dv5cjl9g8=",
+  },
+   {
+    src: "/nature image/image37.jpg",
     downloadLink:
       "https://media.istockphoto.com/id/1161878589/photo/bueatiful-tea-plantation-on-mountain.jpg?s=612x612&w=0&k=20&c=0SxibtMflIB16q5czESEDmm_lKW54z2_j0Dv5cjl9g8=",
   },
