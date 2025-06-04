@@ -77,7 +77,7 @@ export default function index() {
       </div>
       <div className="carousel-item">
         <img
-          src="/hero section image/image4.avif"
+          src="/hero section image/image4.jpg"
           className="d-block w-100"
           alt="art gallery"
           style={{ height: 400 }}
